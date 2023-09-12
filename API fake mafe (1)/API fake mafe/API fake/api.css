@@ -1,0 +1,16 @@
+
+        body{
+            background-image:url(sao-paulo--simples_7521_1024x768-370x297.jpg);
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; color: rgb(0, 0, 0);
+            text-align: center;
+            
+        }
+
+        #dados1, #dados2 ,  #dados3,  #dados4, #dados5,  #dados6 {
+            width: 400px;
+            height: 400px;
+            display: inline-block;
+        
+        }
+        
+

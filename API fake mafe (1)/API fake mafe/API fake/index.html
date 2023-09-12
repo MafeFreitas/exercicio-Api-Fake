@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API E JSON</title>
+    <link rel="stylesheet" href="api.css">
+  
+</head>
+<body>
+
+    <h2>SÃO PAULO FUTEBOL CLUBE E SEUS JOGADORES</h2>
+    <div id="dados">
+    <img id="imagem" src="spfc.png" alt="Imagem" onclick="mostrarDados()">
+        <p>Clique na imagem para informações sobre o time!</p>
+  </div> 
+
+    <div id="dados1"> 
+        <img id="imagem1" src="calleri-fez-o-primeiro-gol-do-sao-paulo-contra-o-corinthians-1634599706649_v2_4x3.jpg" alt="Imagem" width="250px" onclick="mostrarDados1()">
+        <p>Clique para informações sobre esse jogador!</p></div>
+        
+        <div id="dados2">
+        <img id= "imagem2" src="mafe.png" alt="Imagem" width="290px" onclick="mostrarDados2()">
+        <p>Clique para informações sobre esse jogador!</p>
+        </div>
+
+
+        <div id="dados3">
+         <img id= "imagem3" src="lucas-moura-spfc.jpg" alt="Imagem" width="290px" onclick="mostrarDados3()">
+         <p>Clique para informações sobre esse jogador!</p>
+        </div>
+
+        <div id="dados4">
+            <img id= "imagem4" src="mafe2.jpg" alt="Imagem" width="290px" onclick="mostrarDados4()">
+            <p>Clique para informações sobre esse jogador!</p>
+           </div>
+
+           <div id="dados5">
+            <img id= "imagem5" src="mafe3.webp" alt="Imagem" width="290px" onclick="mostrarDados5()">
+            <p>Clique para informações sobre esse jogador!</p>
+           </div>
+
+           <div id="dados6">
+            <img id= "imagem6" src="mafe4.webp" alt="Imagem" width="290px" onclick="mostrarDados6()">
+            <p>Clique para informações sobre esse jogador!</p>
+           </div>
+
+    <script>
+        function mostrarDados() {
+            const jsontime= `{
+                "nomeClube": "São Paulo Futebol Clube" ,
+                "anoDeFundacao" : 1930, 
+                "mascote" : "Paulo de Tarso",
+                "presidente" : "Julio Casares"
+            }`;
+            
+            //Verificar Console
+            console.log(jsontime);
+             //Transformando em JSOM- Objeto Javascript
+             const data = JSON.parse(jsontime)
+             //Verficar Console 
+             console.log(data);
+        
+        
+             //Verificar no navegador- Front-End
+             document.getElementById("dados").innerHTML+= 
+                "<p>Nome do Clube: " +data.nomeClube + "</p>" + 
+                "<p>Ano de Fundação: " +data.anoDeFundacao + "</p>"+
+                "<p>Mascote: " +data.mascote+ "</p>"+
+                "<p>Presidente: " +data.presidente+ "</p>"
+        
+        
+        } 
+    </script>
+    <script>
+    function mostrarDados1() {
+            const jsontime= `{
+                "nome": "Jonathan Calleri" ,
+                "idade" : "29 Anos", 
+                "altura" : "1,81 M",
+                "peso" : "72 kg"
+            }`;
+            
+            //Verificar Console
+            console.log(jsontime);
+             //Transformando em JSOM- Objeto Javascript
+             const data1 = JSON.parse(jsontime)
+             //Verficar Console 
+             console.log(data1);
+        
+        
+             //Verificar no navegador- Front-End
+             document.getElementById("dados1").innerHTML+=
+                "<p>Nome: " +data1.nome + "</p>" + 
+                "<p>Idade: " +data1.idade + "</p>"+
+                "<p>Altura: " +data1.altura+ "</p>"+
+                "<p>Peso: " +data1.peso+ "</p>"
+        
+        
+        } 
+  
+        function mostrarDados2() {
+            const jsontime= `{
+                "nome": "Luciano da Rocha Neves" ,
+                "idade" : "30Anos", 
+                "altura" : "1,81 M",
+                "peso" : "69 kg"
+            }`;
+            
+            //Verificar Console
+            console.log(jsontime);
+             //Transformando em JSOM- Objeto Javascript
+             const data2 = JSON.parse(jsontime)
+             //Verficar Console 
+             console.log(data2);
+        
+        
+             //Verificar no navegador- Front-End
+             document.getElementById("dados2").innerHTML+=
+                "<p>Nome: " +data2.nome + "</p>" + 
+                "<p>Idade: " +data2.idade + "</p>"+
+                "<p>Altura: " +data2.altura+ "</p>"+
+                "<p>Peso: " +data2.peso+ "</p>"
+        
+
+        } 
+
+        function mostrarDados3() {
+            const jsontime= `{
+                "nome": "Lucas Moura" ,
+                "idade" : "31 Anos", 
+                "altura" : "1,72 M",
+                "peso" : "72 kg"
+            }`;
+            
+            //Verificar Console
+            console.log(jsontime);
+             //Transformando em JSOM- Objeto Javascript
+             const data3 = JSON.parse(jsontime)
+             //Verficar Console 
+             console.log(data3);
+        
+        
+             //Verificar no navegador- Front-End
+             document.getElementById("dados3").innerHTML+=
+                "<p>Nome: " +data3.nome + "</p>" + 
+                "<p>Idade: " +data3.idade + "</p>"+
+                "<p>Altura: " +data3.altura+ "</p>"+
+                "<p>Peso: " +data3.peso+ "</p>"
+        
+        
+        } 
+
+    
+            function mostrarDados4() {
+                const jsontime= `{
+                    "nome": "James Rodríguez" ,
+                    "idade" : "32 Anos", 
+                    "altura" : "1,80 M",
+                    "peso" : "75 kg"
+                }`;
+                
+                //Verificar Console
+                console.log(jsontime);
+                 //Transformando em JSOM- Objeto Javascript
+                 const data4 = JSON.parse(jsontime)
+                 //Verficar Console 
+                 console.log(data4);
+            
+            
+                 //Verificar no navegador- Front-End
+                 document.getElementById("dados4").innerHTML+=
+                    "<p>Nome: " +data4.nome + "</p>" + 
+                    "<p>Idade: " +data4.idade + "</p>"+
+                    "<p>Altura: " +data4.altura+ "</p>"+
+                    "<p>Peso: " +data4.peso+ "</p>"
+            }    
+
+            function mostrarDados5() {
+                const jsontime= `{
+                    "nome": "Alexandre Pato" ,
+                    "idade" : "33 Anos", 
+                    "altura" : "1,80 M",
+                    "peso" : "72 kg"
+                }`;
+                
+                //Verificar Console
+                console.log(jsontime);
+                 //Transformando em JSOM- Objeto Javascript
+                 const data5 = JSON.parse(jsontime)
+                 //Verficar Console 
+                 console.log(data5);
+            
+            
+                 //Verificar no navegador- Front-End
+                 document.getElementById("dados5").innerHTML+=
+                    "<p>Nome: " +data5.nome + "</p>" + 
+                    "<p>Idade: " +data5.idade + "</p>"+
+                    "<p>Altura: " +data5.altura+ "</p>"+
+                    "<p>Peso: " +data5.peso+ "</p>"
+            }    
+
+            function mostrarDados6() {
+                const jsontime= `{
+                    "nome": "Giuliano Galoppo" ,
+                    "idade" : "24 Anos", 
+                    "altura" : "1,80 M",
+                    "peso" : "73 kg"
+                }`;
+                
+                //Verificar Console
+                console.log(jsontime);
+                 //Transformando em JSOM- Objeto Javascript
+                 const data6 = JSON.parse(jsontime)
+                 //Verficar Console 
+                 console.log(data6);
+            
+            
+                 //Verificar no navegador- Front-End
+                 document.getElementById("dados6").innerHTML+=
+                    "<p>Nome: " +data6.nome + "</p>" + 
+                    "<p>Idade: " +data6.idade + "</p>"+
+                    "<p>Altura: " +data6.altura+ "</p>"+
+                    "<p>Peso: " +data6.peso+ "</p>"
+            }    
+         </script>
+
+
+
+</body>
+</html>
